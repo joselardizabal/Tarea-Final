@@ -18,8 +18,10 @@ class PersonajeJugador : public Personaje
         bool rayo_activado;
         bool rayo2_activado;
         int rayo_cooldown;
+        int rayo2_cooldown;
         string rayo_orientacion;
         int rayo_frame_actual;
+        int rayo2_frame_actual;
         PersonajeJugador(int x, int y,
                           SDL_Renderer* renderer,
                           list<Personaje*>*personajes);

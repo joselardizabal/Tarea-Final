@@ -146,28 +146,28 @@ void PersonajeJugador::logic(Uint8* teclas_presionadas)
         {
             if( teclas_presionadas[ SDL_SCANCODE_W ] )
             {
-                rectangulo.y-=5;
+                rectangulo.y-=1;
                 if(orientacion!="up")
                     textura_actual=texturas_up.begin();
                 orientacion="up";
             }
             if( teclas_presionadas[ SDL_SCANCODE_S ] )
             {
-                rectangulo.y+=5;
+                rectangulo.y+=1;
                 if(orientacion!="down")
                     textura_actual=texturas_down.begin();
                 orientacion="down";
             }
             if( teclas_presionadas[ SDL_SCANCODE_D ] )
             {
-                rectangulo.x+=5;
+                rectangulo.x+=1;
                 if(orientacion!="right")
                     textura_actual=texturas_right.begin();
                 orientacion="right";
             }
             if( teclas_presionadas[ SDL_SCANCODE_A ] )
             {
-                rectangulo.x-=5;
+                rectangulo.x-=1;
                 if(orientacion!="left")
                     textura_actual=texturas_left.begin();
                 orientacion="left";
@@ -225,22 +225,22 @@ void PersonajeJugador::logic(Uint8* teclas_presionadas)
     {
         if(rayo_orientacion == "up")
         {
-            rayo2_rect.y-= 5;
+            rayo2_rect.y-= 2;
         }
 
         if(rayo_orientacion == "down")
         {
-            rayo2_rect.y += 5;
+            rayo2_rect.y += 2;
         }
 
         if(rayo_orientacion == "left")
         {
-            rayo2_rect.x-= 5;
+            rayo2_rect.x-= 2;
         }
 
         if(rayo_orientacion == "right")
         {
-            rayo2_rect.x+= 5;
+            rayo2_rect.x+= 2;
         }
     }
 
